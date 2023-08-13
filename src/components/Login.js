@@ -20,7 +20,7 @@ function Login() {
         console.log('Authorization Token not found in cookies.');
         navigate("/login-admin")
         }
-    },[authorization]);
+    },[authorization]); // eslint-disable-line react-hooks/exhaustive-deps
 
     const handleUsernameChange = (e) => {
         setUsername(e.target.value);
